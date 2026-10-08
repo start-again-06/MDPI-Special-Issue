@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+title: "MiniChannelFlow.jl: laminar flow and heat transfer in mini-channels"
+type: software
+version: 0.1.0
+date-released: "2026-10-08"
+license: MIT
+repository-code: "https://github.com/start-again-06/MiniChannelFlow.jl"
+authors:
+  - given-names: "Anjan"
+    family-names: "Mahapatra"
+keywords:
+  - minichannel
+  - microchannel
+  - heat transfer
+  - laminar flow
+  - Graetz problem
+  - heat sink
+  - Julia
