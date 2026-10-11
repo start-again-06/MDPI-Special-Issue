@@ -1,0 +1,25 @@
+== 1. Fully developed rectangular duct (Shah & London reference values) ==
+ alpha  fRe_exact  (lit)   NuH1_FV(48)  (lit)   NuT_graetz(48)  (lit)
+ 1.000   14.2271 (14.227)     3.6135 (3.608)       2.9798 (2.976)
+ 0.500   15.5481 (15.548)     4.1267 (4.123)       3.3936 (3.391)
+ 0.250   18.2328 (18.233)     5.3338 (5.331)       4.4421 (4.439)
+ 0.125   20.5847 (20.585)     6.4930 (6.490)       5.6093 (5.597)
+
+== 2. Grid convergence of fRe (square duct) ==
+ errors: ['5.55e-02', '1.47e-02', '3.75e-03', '9.41e-04']  ratios: ['3.77', '3.93', '3.98']
+
+== 3. Plane-channel developing flow (2-D Navier-Stokes) ==
+ Nx,Ny,L,Re=(120, 16, 12.0, 100.0): fRe=23.814 (24)  u_cl=1.4884 (1.5)  Lh/Dh=1.30 (Chen 1.21)  K_mid=0.935  max|div|=7.3e-15  its=1800
+ Nx,Ny,L,Re=(240, 32, 12.0, 100.0): fRe=23.953 (24)  u_cl=1.4971 (1.5)  Lh/Dh=1.25 (Chen 1.21)  K_mid=1.069  max|div|=3.6e-14  its=1800
+ Nx,Ny,L,Re=(300, 24, 30.0, 400.0): fRe=23.926 (24)  u_cl=1.4948 (1.5)  Lh/Dh=4.65 (Chen 4.44)  K_mid=0.771  max|div|=2.9e-15  its=20400
+
+== 4. K(Re) = K_inf + c/Re extrapolation (Nx=400, Ny=32, L=40) ==
+ Re=200: K=0.9005
+ Re=400: K=0.7958
+ c=41.9  K_inf=0.691   (Shah & London: 0.674)
+
+== 5. Tuckerman & Pease (1981) Table I ==
+ sample 1: R=0.1082 (meas 0.11, -1.6%)  dP=107.1 kPa (meas 103.4, +3.6%)  Re=278
+ sample 3: R=0.0805 (meas 0.09, -10.5%)  dP=264.7 kPa (meas 213.7, +23.9%)  Re=624
+
+Done in 53 s
